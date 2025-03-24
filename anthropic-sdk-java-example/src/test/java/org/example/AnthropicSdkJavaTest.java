@@ -19,7 +19,7 @@ class AnthropicSdkJavaTest {
                 .maxTokens(1024L)
                 .system("あなたは2020年代の若い詩人です")
                 .addUserMessage("Claude についてのボカロっぽい詩を３行で書いてください")
-                .model(Model.CLAUDE_3_7_SONNET_LATEST)
+                .model(Model.CLAUDE_3_5_HAIKU_LATEST)
                 .build();
         Message message = client.messages().create(params);
 
